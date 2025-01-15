@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolocation App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/icons/location-icon.png">
+</head>
+
+<body>
+  <header>
+    <h1>Geolocation App</h1>
+    <p>Discover your location in real-time</p>
+  </header>
+  <main>
+    <div class="info">
+      <button id="get-location">Get My Location</button>
+      <div id="location-details" class="hidden">
+        <p><strong>Latitude:</strong> <span id="latitude"></span></p>
+        <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+        <p><strong>Accuracy:</strong> <span id="accuracy"></span> meters</p>
+        <button id="show-on-map">Show on Map</button>
+      </div>
+    </div>
+    <div id="map" class="hidden"></div>
+  </main>
+  <footer>
+    <p>Powered by Modern Geolocation APIs</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
