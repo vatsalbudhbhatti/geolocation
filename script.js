@@ -37,11 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     mapDiv.classList.remove("hidden");
+
+    // Static Map URL or Image
     const map = new Image();
-    map.src = `https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=15&size=600x300&markers=color:red|${latitude},${longitude}&key=AIzaSyAtnHHv1Ej5apTO94DpFzOCSHiaeLCZheU`;
+    map.src = `https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=15&size=600x300&markers=color:red|${latitude},${longitude}&key=AIzaSyBfCAI9yrsePygEh042pRg0WvbJUbeKRqg`;
     map.alt = "Map showing your location";
-    map.style.width = "100%";
-    map.style.height = "100%";
+    map.style.width = "100%"; // Make the map image fill the container width
+    map.style.height = "100%"; // Make the map image fill the container height
 
     mapDiv.innerHTML = ""; // Clear previous map
     mapDiv.appendChild(map);
